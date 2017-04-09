@@ -1,0 +1,41 @@
+{
+  "name": "@galkin/zetro",
+  "version": "0.0.1",
+  "description": "Test task for Zerto Company",
+  "homepage": "https://github.com/galkin/zerto-test-task#readme",
+  "bugs": {
+    "url": "https://github.com/galkin/zerto-test-task/issues"
+  },
+  "license": "UNLICENSED",
+  "author": "Nikita Galkin",
+  "files": [
+    "src",
+    "bin"
+  ],
+  "main": "index.js",
+  "bin": "bin/zerto",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galkin/zerto-test-task.git"
+  },
+  "scripts": {
+    "cs": "eslint src/**.js test/**.js",
+    "test": "npm run cs && npm run test:functional",
+    "test:functional": "mocha"
+  },
+  "dependencies": {
+    "node-watch": "^0.5.2",
+    "yargs": "^7.0.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^3.2.0",
+    "tmp": "0.0.31"
+  }
+}
